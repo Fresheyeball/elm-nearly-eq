@@ -1,0 +1,14 @@
+{
+    "version": "1.0.0",
+    "summary": "Tools for approximating equality",
+    "repository": "https://github.com/Fresheyeball/elm-nearly-eq.git",
+    "license": "BSD3",
+    "source-directories": [
+        "."
+    ],
+    "exposed-modules": ["Nearly"],
+    "dependencies": {
+        "elm-lang/core": "3.0.0 <= v < 4.0.0"
+    },
+    "elm-version": "0.16.0 <= v < 0.17.0"
+}

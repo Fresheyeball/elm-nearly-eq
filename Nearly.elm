@@ -1,8 +1,8 @@
-module Nearly where
+module Nearly exposing (..)
 
 {-|
 
-@docs nearly, (~=)
+@docs nearly, (~=), epsillon
 
 -}
 
@@ -29,6 +29,12 @@ nearly epsillon a b =
       diff <= epsillon * min (abs a) (abs b)
 
 
+{-|
+epsillon
+-}
+epsillon : Float
+epsillon = 1.0e-5
+
 
 {-|
 Pre-baked fuzzy equality, with `1.0e-5` as epsillon.
@@ -37,5 +43,5 @@ Pre-baked fuzzy equality, with `1.0e-5` as epsillon.
 ```
 -}
 (~=) : Float -> Float -> Bool
-(~=) = nearly 1.0e-5
+(~=) = nearly epsillon
 infixr 6 ~=

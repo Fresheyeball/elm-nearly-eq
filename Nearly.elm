@@ -1,4 +1,4 @@
-module Nearly where
+module Nearly exposing (..)
 
 {-|
 
